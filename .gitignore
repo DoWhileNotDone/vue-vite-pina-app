@@ -8,7 +8,8 @@ pnpm-debug.log*
 lerna-debug.log*
 
 TODO.md
-data
+data/*
+!data/db.json
 node_modules
 .DS_Store
 dist

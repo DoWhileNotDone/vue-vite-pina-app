@@ -11,15 +11,16 @@ const { students, loading } = storeToRefs(useStudentsStore())
     <v-col sm8 offset-sm2>
         <v-card>
             <v-toolbar dark>
-                <v-toolbar-title>Students</v-toolbar-title>
+                <v-toolbar-title data-cy="students-list-header">Students</v-toolbar-title>
             </v-toolbar>
             <v-list v-if="students">
                 <v-list-item
                     v-for="(student) in students"
                     :to="`/students/${student.id}/edit`"
                     :key="student.id"
+                    data-cy="students-list"
                 >
-                    <v-list-item-title>
+                    <v-list-item-title >
                     {{student.fullName}}
                     </v-list-item-title>
                 </v-list-item>

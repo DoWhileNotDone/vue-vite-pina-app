@@ -21,7 +21,7 @@ function submit() {
         <v-col sm8 offset-sm2>
             <v-card>
                 <v-toolbar dark>
-                    <v-toolbar-title>New Student</v-toolbar-title>
+                    <v-toolbar-title data-cy="new-student-header">New Student</v-toolbar-title>
                 </v-toolbar>
                 <v-form>
                     <v-container>
